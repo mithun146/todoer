@@ -33,7 +33,22 @@
 <body>
 
   <!-- Ionic's root component and where the app will load -->
-  <ion-app></ion-app>
+  <ion-app>
+    <!-- Firebase to your web app  -->
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAbLJ7lEpVPFS782-OjOT6Rp1OCtXPQTtM",
+        authDomain: "todoer-1d999.firebaseapp.com",
+        databaseURL: "https://todoer-1d999.firebaseio.com",
+        projectId: "todoer-1d999",
+        storageBucket: "todoer-1d999.appspot.com",
+        messagingSenderId: "345394938886"
+      };
+      firebase.initializeApp(config);
+    </script>
+  </ion-app>
 
   <!-- The polyfills js is generated during the build process -->
   <script src="build/polyfills.js"></script>
